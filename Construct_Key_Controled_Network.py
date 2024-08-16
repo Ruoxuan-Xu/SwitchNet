@@ -45,13 +45,8 @@ def random_split(x):
     return a, b, c
 
 def generate_tensor(n, m):
-    # Step 1: Initialize the tensor with -1.0
     tensor = torch.full((n,), -1.0)
-    
-    # Step 2: Set the first element to 1.0
     tensor[0] = 1.0
-    
-    # Step 3: Randomly select (m-1) positions to be 1.0 (excluding the first position)
     if m > 1:
         indices = random.sample(range(1, n), m - 1)
         for index in indices:
