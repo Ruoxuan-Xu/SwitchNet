@@ -1,7 +1,3 @@
-"""
-Training file for training SkipNets for supervised pre-training stage
-"""
-
 from __future__ import print_function
 
 import torch
