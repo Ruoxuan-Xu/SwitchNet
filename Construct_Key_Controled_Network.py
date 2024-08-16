@@ -34,15 +34,10 @@ np.random.seed(seed)
 torch.manual_seed(seed)
 
 def random_split(x):
-    # 随机选择两个分割点
     p1 = random.randint(0, x)
     p2 = random.randint(0, x)
-    
-    # 确保 p1 小于或等于 p2
     if p1 > p2:
         p1, p2 = p2, p1
-    
-    # 计算 a, b, c
     a = p1
     b = p2 - p1
     c = x - p2
