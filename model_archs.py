@@ -1,8 +1,4 @@
 
-""" This file contains the model definitions for both original ResNet (6n+2
-layers) and SkipNets.
-增加了ResNetFeedForwardSP_MaskControl class，增加了model.feature，更改了所有gate layer的输入。
-"""
 from pyclbr import Class
 import torch
 from torch import nn
