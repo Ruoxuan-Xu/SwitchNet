@@ -1,9 +1,9 @@
 """
-针对ResNet-18架构网络的实验:
-1、随机选择添加confusion_layer的层数 random_add_confusion_num
-2、代码可以自动生成每一个group分别需要添加confusion layer的层数
-3、代码可以自动根据添加cl层数，构造b_base和b_random，也即正确和随机开关序列
-4、根据b_base构造key controled resnet18模型。
+Experiments on the ResNet-18 architecture:
+Randomly select the number of layers to add the confusion layer (random_add_confusion_num).
+The code can automatically generate the number of confusion layers to be added for each group.
+The code can automatically construct b_base and b_random, which are the correct and random switch sequences, based on the number of confusion layers added.
+Construct a key-controlled ResNet-18 model based on b_base."
 """
 
 from __future__ import print_function
